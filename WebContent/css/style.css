@@ -1,0 +1,316 @@
+/* CSS Document */
+@charset "utf-8";
+
+/****网页头部 ****/
+#header{
+	height: 25px;
+	background-color:#F5F5F5;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/****账户操作 <a>****/
+.head_account{
+	float:right;
+	text-decoration: none;
+}
+/****主页导航栏 <ul>****/
+.navigator{
+	list-style: none;
+}
+.navigator li{
+	float: left;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #BBBBBB;
+}
+.navigator li:hover{
+	background-color: yellow;
+}
+.navigator a li{
+	text-decoration: none;
+	color: #F000F0;
+	font-weight: bold;
+}
+
+/****buyer_order.jsp****/
+
+/***个人主页功能菜单***/
+#functionmenu{
+	width: 20%;
+	height: 100%;
+	margin-left: 36px;
+	margin-top: 66px;
+	font-size: 17px;
+}
+#functionmenu ul{
+	list-style: none;
+}
+#functionmenu ul a{
+	text-decoration: none;
+	color: #C15D5E;
+}
+#functionmenu ul a li{
+	height: 40px;
+}
+
+/***订单状态分类***/
+#orderstatus{
+	width: 100%;
+}
+#orderstatus a{
+	margin: 10px;
+	font-family: "宋体";
+	font-size: x-large;
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+/****buyer_order.jsp结束****/
+
+/******order.jsp*******/
+
+/***订单***/
+.order{
+	border: solid 1px #daf3ff;
+}
+.order:hover{
+	box-shadow: 0px 0px 5px #aed8ff;
+}
+/***订单各项***/
+#orderkey{
+	text-align: center;
+	background-color: #F5F5F5;
+}
+/***立即付款按钮***/
+.pay_button{
+	cursor: pointer;
+	border: none;
+	font-size: large;
+	background-color: #66B6FF;
+	border-radius:2px;
+	color: white;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.pay_button:hover{
+	background-color: rgb(13,178,219);
+}
+/*******order.jsp结束*******/
+
+
+/*******confirm_order.jsp*******/
+
+/***确认订单页面 订单属性***/
+.orderkey{
+	border-bottom: solid 4px #B2D1FF;
+	text-align: center;
+}
+/***提交订单按钮***/
+.submit_order{
+	padding:10px;
+	background-color: red;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	border:none;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor:pointer;
+}
+/***数量+、-按钮***/
+#increase,#decrease{
+	background: none;
+	border: solid #AED8FF 1px;
+	width: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	float: left;
+	padding: 0px;
+}
+#increase:hover,#decrease:hover{
+	background-color: #B2D1FF;
+}
+#increase:active,#decrease:active{
+	background-color: #BBBBBB;
+}
+#increase:disabled,#decrease:disabled{
+	background-color: #FFFFFF;
+}
+/***数量显示方式***/
+#num{
+	background:none;
+	color:black; 
+	float: left;
+	text-align: center;
+	width: 32px;
+	position:relative;
+	top:3px;
+}
+/***confirm_order.jsp结束***/
+
+
+/**************************/
+#changepass,#regist_deliver,#changealipay{
+	display:none;
+	width: 50%;
+	height: 300px;
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom:0px;
+	background-color: white;
+	box-shadow: 0 3px 18px rgba(100, 0, 0, .5);
+	border-radius: 3px;
+	text-align: center;
+	padding: 30px;
+}
+#changepass iframe,#regist_deliver iframe,#changealipay iframe{
+	width: 100%;
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 85%;
+	border: none;
+	display: block;
+}
+#cover{
+	display: none;
+	background-color: black;
+	position:fixed;
+	top:0px;
+	left: 0px;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: #5ea45e;
+	cursor:pointer;
+}
+a:hover{
+	color:green;
+}
+/***价格***/
+.price{
+	color: red;
+	font-family: 微软雅黑;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/************User.jsp****************/
+/***个人资料页面，.userinfo与支付宝信息框共用***/
+.userinfo{
+	margin-top: 6px;
+	float: left;
+	width: 35%;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.userinfo p{
+	padding: 11px;
+}
+#userinfo p{
+	padding: 15px;
+}
+/****注册按钮*****/
+#regBtn{
+	background-color: #cfc723;
+	color: white;
+	font-size: 20px;
+	width: 54%;
+	cursor: pointer;
+	height: 80%;
+	border: none;
+}
+/***帮助页面的目录***/
+.dir{
+	position:fixed;
+	right:10px;
+	bottom:40%;
+    border: solid 1px #d2d2d2;
+}
+.dir p{
+	padding: 12px;
+	background-color:#f8f8f8;
+}
+.dir ul{
+	padding:12px;
+}
+.dir ul a li{
+	padding:5px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+/***立即购买按钮旁边的图标***/
+#buy{
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	top: 2px;
+	right: 4px;
+}
+/***加入购物车按钮***/
+#addshoppingcart{
+	border-radius: 2px;
+	border-style: solid;
+	background-color: #DD0000;
+	border-width: 1px;
+	cursor: pointer;
+	display: inline-table;
+	font-size: 18px;
+	color: white;
+	line-height: 39px;
+	text-align: center;
+	width: 170px;
+}
+/***帮助标题***/
+.helptitle{
+	font-size:25px;
+	font-family:黑体;
+	color:red;
+}
+/***帮助内容***/
+.helpcontent{
+	font-size:15px;
+	font-family:微软雅黑;
+	padding:10px;
+}
+/***消息标题***/
+.msg_title{
+	
+}
+.msg_unread{
+	font-weight:bold;
+}
+/***注册字段***/
+.reg-item{
+	font-family:黑体;
+	font-size:18px;
+	text-align:right;
+	color:#666666
+}
+/***注册输入框***/
+.reg-input{
+	border:solid 1px #dddddd;
+	padding:12px;
+	margin:10px;
+	width:84%;
+	font-size:18px;
+}
+.reg-input:focus{
+	border-color: #488ee7;
+}
+.tip{
+	font-size: 14px;
+	text-align:left;
+}
+.tip i{
+	color:red;
+}
